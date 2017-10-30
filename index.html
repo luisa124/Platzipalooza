@@ -40,11 +40,11 @@
     <!-- logo -->
     <!-- menu -->
     <section id="menu-container">
-        <ul class="menu dropdown" data-dropdown-menu> 
+        <ul class="menu dropdown align-spaced" data-dropdown-menu> 
             <li><a href="#">Tickets</a></li>
             <li>
             <a href="#">Lineup</a>
-            <ul class="menu">
+            <ul id="submenu-container" class="menu">
                 <li><a href="#">Viernes</a></li>
                 <li><a href="#">Sabado</a></li>
                 <li><a href="#">Domingo</a></li>
@@ -55,6 +55,50 @@
         </ul>
     </section>
     <!-- menu -->
+    <!-- Tickets -->
+    <section id="tickets-action">
+        <div class="callout large text-center">
+           <a href="#">
+             <button class="large hollow button">Comprar boletos</button>  
+           </a>
+        </div>
+    </section>
+    <!-- Tickets -->
+    <!-- Lienup -->
+    <section id="lienup-container">
+        <h3 class="text-center">Lienup</h3>
+        <ul class="tabs text-center" data-tabs id="lineup-tabs">
+            <li class="tabs-title is-active">
+                <a href="#panelViernes">Viernes</a>
+            </li>
+            <li class="tabs-title is-active">
+                <a href="#panelSabado">Sabado</a>
+            </li>
+            <li class="tabs-title">
+                <a href="#panelDomingo">Domingo</a>
+            </li>
+        </ul>
+        <div class="tabs-content" data-bats-content="lineup-tabs">
+            <div class="tabs-panel is-active" id="panelViernes">
+                <div class="row">
+                   <div class="smail-12 medium-6 column"></div> 
+                   <div class="orbit-container">
+                       <div class="orbit-slide">
+                           <img class="orbit-image" src="http://img.wennermedia.com/social/rs-15192-gunsnroses-1800-1399296245.jpg" alt="Guns n' Roses">
+                           <figcaption class="orbit-caption">Guns n' Roses</figcaption>
+                       </div>
+                   </div>
+                </div>
+            </div>
+            <div class="tabs-panel" id="panelSabado">
+                El contenido del panel del sabado
+            </div>
+            <div class="tabs-panel" id="panelDomingo">
+                El contenido del panel del domingo
+            </div>
+        </div>
+    </section>
+    <!-- Lienup -->
     
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/what-input.js"></script>
